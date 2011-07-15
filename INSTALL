@@ -1,0 +1,41 @@
+// $Id: INSTALL,v 1.2 2008/05/16 02:35:29 hayes Exp hayes $
+// $Author: hayes $
+// $Date: 2008/05/16 02:35:29 $
+// $Revision: 1.2 $
+//
+
+Should be fairly straightforward to install (Famous last words).
+However, Your mileage may vary (YMMV) due to the presence or lack of
+libraries already installed in your system.
+
+You may wish to acquire
+
+PNG: libpng-1.2.29.tar.bz2
+     http://www.libpng.org/pub/png/libpng.html
+     http://prdownloads.sourceforge.net/libpng/libpng-1.2.29.tar.bz2?download
+     ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng-1.2.29.tar.bz2
+     http://download.sourceforge.net/libpng/libpng-1.2.29.tar.bz2
+
+JPEG: jpeg-6b/
+      http://www.ijg.org/
+      ftp://ftp.simtel.net/pub/simtelnet/msdos/graphics/jpegsr6.zip
+      http://www.ijg.org/files/
+      ftp://ftp.uu.net/graphics/jpeg/
+
+ZLIB: zlib-1.2.3.tar.gz
+      http://www.zlib.net/
+      
+and you must have IMLIB
+
+// http://freshmeat.net/projects/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-1.9.15.tar.bz2
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-1.9.15.tar.gz
+
+
+Start here...  If you have difficulties, let us know and we will
+modify where possible...
+
+make
+make install

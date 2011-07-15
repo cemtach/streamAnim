@@ -1,0 +1,61 @@
+// $Id: README,v 1.2 2008/05/16 02:39:45 hayes Exp $
+// $Author: hayes $
+// $Date: 2008/05/16 02:39:45 $
+// $Revision: 1.2 $
+//
+// Copyright © 1999 Paul Robert Hayes.  This is free software.
+//  You may redistribute copies of it under the
+// terms of the GNU General Public License
+// <http://www.gnu.org/licenses/gpl.html>.  There is NO
+// WARRANTY, to the extent permitted by law.
+
+//
+// streamAnim is designed to be a lower level image streaming utility
+// to XWindows platforms including Linux with a minimal windowing and
+// library need.  streamAnim never completely loads the stream of
+// images into memory, only loading one image at a time.  This is
+// exceptionaly useful with very large images and very large streams
+// of images which can rapidly bring a systems memory grinding to a
+// halt in mid animation.....
+//
+// streamAnim is not designed to be a converter or "stream" media to
+// the Internet.  Rather, it is designed to simply and quickly parse
+// image files and display them as fast as your own file system will
+// deliver them while using as minimal a memory footprint as possible.
+//
+// This version relies on imlib for greater flexibility in image
+// format loading....
+//
+// http://freshmeat.net/projects/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-1.9.15.tar.bz2
+// http://ftp.gnome.org/pub/GNOME/sources/imlib/1.9/imlib-1.9.15.tar.gz
+//
+
+//
+// show all the files once through
+//
+streamAnim allmyfiles*.png
+
+//
+// loop continuously through the entire file set...
+//
+streamAnim --loop  allmyfiles*.png
+
+// read the images files from file named myList with one imagefile per line..
+// loop continuously through the entire file set...
+//
+streamAnim --loop --listFile myList
+
+
+
+// If you pass a myList file to streamAnim, it will parse a file name,
+// then attempt to load it from:
+//
+// the filename itself
+// the current directory prefixed to the filename
+// the root of the myList file added to the filename
+//
+// if none are possible, the file will be dropped/ignored.
+//
